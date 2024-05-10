@@ -1,0 +1,23 @@
+----Last updated Friday 10th May, 2024 4:25pm GMT----
+
+This is a simple USSSD App built with Python
+Before you start anything else make sure you read this ReadMe file thoroughly 
+If you're reading this in the future, some libraries may not be compartible due to updates
+Make sure you search the the incompartible library in the pypi.org for newer versions and read the documaentation
+
+___START___
+Clone this code and go through the code
+Go to www.ngrok.com and download ngrok
+Create an account and login, run the command line code in the installation guideline 
+A Url would be generated for you which can be found in the "Authtoken" panel  copy the Url ---Make sure you paste the Url, it would be needed later---
+Run Ngrok in the terminal using the following command "ngrok https 8000"
+On the command line you would see "Forwarding", copy the url assigned to it and paste it in the "ALLOWED_HOST=["url link from ngrok"]" in the settings.py file
+Create an account on www.africastalking.com and and switch to sandbox mode 
+Navigate to the USSD in the dashboard and Click Create channel 
+This will take you to a page where you will create your own USSD service code
+Fill in the details, paste the Url you generated on the ngrok dashboard in the "Callback url" box then submit
+Run "python manage.py runserver" in your code editor
+Login to africastalking.com, click on "Launch simulator" to test your new USSD app
+___END___
+
+Hola!!...You've successfully created a USSD App in python
